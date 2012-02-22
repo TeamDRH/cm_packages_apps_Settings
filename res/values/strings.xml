@@ -4296,6 +4296,11 @@ found in the list of installed apps.</string>
     <string name="quick_links_title">Quick Links</string>
     <string name="drh_control_title">ROM Control</string>
 
+    <!-- Electron Beam -->
+    <string name="display_category_animation_options_title">Animation</string>
+    <string name="display_electron_beam_animation_on_title">Screen-on animation</string>
+    <string name="display_electron_beam_animation_off_title">Screen-off animation</string>
+
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
     <string name="pref_volume_wake_title">Volume rocker wake</string>
