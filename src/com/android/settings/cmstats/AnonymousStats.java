@@ -65,7 +65,7 @@ public class AnonymousStats extends SettingsPreferenceFragment
             mPrefs = getActivity().getSharedPreferences("CMStats", 0);
             mEnableReporting = (CheckBoxPreference) prefSet.findPreference(ANONYMOUS_OPT_IN);
             mViewStats = (Preference) prefSet.findPreference(VIEW_STATS);
-            boolean firstBoot = mPrefs.getBoolean(ANONYMOUS_FIRST_BOOT, true);
+            boolean firstBoot = mPrefs.getBoolean(ANONYMOUS_FIRST_BOOT, false);
             if (mEnableReporting.isChecked() && firstBoot) {
                 mPrefs.edit().putBoolean(ANONYMOUS_FIRST_BOOT, false).apply();
                 ReportingServiceManager.launchService(getActivity());
