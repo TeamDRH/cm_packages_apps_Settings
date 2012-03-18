@@ -44,8 +44,8 @@ public class ReportingServiceManager extends BroadcastReceiver {
     protected static void setAlarm (Context ctx) {
         SharedPreferences prefs = ctx.getSharedPreferences("CMStats", 0);
         prefs.edit().putBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, false).apply();
-        boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
-        boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
+        boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, false);
+        boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, false);
         if (!optedIn || firstBoot) {
             return;
         }
@@ -68,8 +68,8 @@ public class ReportingServiceManager extends BroadcastReceiver {
         if (networkInfo != null && networkInfo.isConnected()) {
             SharedPreferences prefs = ctx.getSharedPreferences("CMStats", 0);
             long lastSynced = prefs.getLong(AnonymousStats.ANONYMOUS_LAST_CHECKED, 0);
-            boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, true);
-            boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
+            boolean firstBoot = prefs.getBoolean(AnonymousStats.ANONYMOUS_FIRST_BOOT, false);
+            boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, false);
             boolean alarmSet = prefs.getBoolean(AnonymousStats.ANONYMOUS_ALARM_SET, false);
             if (alarmSet) {
                 return;
