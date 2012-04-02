@@ -336,7 +336,11 @@ public class Settings extends PreferenceActivity implements ButtonBarHandler {
                 if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
                     target.remove(header);
                 }
+            }  else if (id == R.id.performance_settings) {
+                // Remove Performance Settings for ROMControl version.
+                target.remove(header);
             }
+
 
             // Increment if the current one wasn't removed by the Utils code.
             if (target.get(i) == header) {
