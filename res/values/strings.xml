@@ -4306,14 +4306,6 @@ found in the list of installed apps.</string>
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 
-    <string name="quick_links_title">Quick Links</string>
-    <string name="drh_control_title">ROM Control</string>
-
-    <!-- Electron Beam -->
-    <string name="display_category_animation_options_title">Animation</string>
-    <string name="display_electron_beam_animation_on_title">Screen-on animation</string>
-    <string name="display_electron_beam_animation_off_title">Screen-off animation</string>
-
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
     <string name="pref_volume_wake_title">Volume rocker wake</string>
@@ -4325,4 +4317,7 @@ found in the list of installed apps.</string>
     <string name="profile_write_failed">Tag writing failed!</string>
     <string name="profile_selected">Profile selected: %1$s</string>
     <string name="profile_nfc_text">Writing a profile to an NFC tag allows you to tap the tag to select that profile. Tapping a second time will select the previously selected profile.</string>
+
+    <string name="quick_links_title">Quick Links</string>
+    <string name="drh_control_title">ROM Control</string>
 </resources>
