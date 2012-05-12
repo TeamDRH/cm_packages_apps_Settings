@@ -337,7 +337,6 @@ public class Settings extends PreferenceActivity implements ButtonBarHandler {
                     target.remove(header);
                 }
             }  else if (id == R.id.performance_settings ||
-                        id == R.id.themes_settings ||
                         id == R.id.system_settings ) {
                 // Remove Performance Settings for ROMControl version.
                 target.remove(header);
