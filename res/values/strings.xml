@@ -4433,4 +4433,9 @@ found in the list of installed apps.</string>
 
     <string name="quick_links_title">Quick Links</string>
     <string name="drh_control_title">ROM Control</string>
+
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">Show icon when using stylus</string>
+    <string name="stylus_icon_enabled_summary">Show the pointer icon when hovering or drawing with the stylus</string>
+
 </resources>
